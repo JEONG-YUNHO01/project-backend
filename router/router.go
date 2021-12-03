@@ -28,5 +28,8 @@ func Router() *echo.Echo {
 	// 품목기준코드를 통한 의약품 정보 취득 API
 	e.GET("/api/detail", handler.GetOneDrugDetail)
 
+	// 문의글 발송
+	e.POST("/api/contact", handler.SendMail)
+
 	return e
 }

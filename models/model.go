@@ -30,3 +30,10 @@ type Body struct {
 	NumOfRows  int     `json:"numOfRows"`
 	Items      []Items `json:"items"`
 }
+
+type MailContent struct {
+	Name     string `json:"name"`
+	MailAddr string `json: "mailAddr"`
+	Content  string `json: "content"`
+	IpAddr   string `json: "ipAddr"`
+}
